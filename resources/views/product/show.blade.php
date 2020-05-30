@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Home')
+@section('title', $item->title)
 @section('custom_css')
     <link rel="stylesheet" type="text/css" href="/styles/product.css">
     <link rel="stylesheet" type="text/css" href="/styles/product_responsive.css">
@@ -48,7 +48,7 @@
                                 $image = 'no_image.png';
                             }
                         @endphp
-                        <div class="details_image_large"><img src="/images/{{$image}}" alt="{{$item->title}}"><div class="product_extra product_new"><a href="categories.html">New</a></div></div>
+                        <div class="details_image_large"><img src="/images/{{$image}}" alt="{{$item->title}}"><div class="product_extra product_new"><a href="categories.html">{{$item->category['title']}}</a></div></div>
                         <div class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
                             @if($image == 'no_image.png')
 

@@ -13,7 +13,7 @@
 
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
-                    <div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+                    <div class="home_slider_background" style="background-image:url(/images/home_slider_1.jpg)"></div>
                     <div class="home_slider_content_container">
                         <div class="container">
                             <div class="row">
@@ -31,7 +31,7 @@
 
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
-                    <div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+                    <div class="home_slider_background" style="background-image:url(/images/home_slider_1.jpg)"></div>
                     <div class="home_slider_content_container">
                         <div class="container">
                             <div class="row">
@@ -49,7 +49,7 @@
 
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
-                    <div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+                    <div class="home_slider_background" style="background-image:url(/images/home_slider_1.jpg)"></div>
                     <div class="home_slider_content_container">
                         <div class="container">
                             <div class="row">
@@ -93,10 +93,10 @@
     <div class="avds">
         <div class="avds_container d-flex flex-lg-row flex-column align-items-start justify-content-between">
             <div class="avds_small">
-                <div class="avds_background" style="background-image:url(images/avds_small.jpg)"></div>
+                <div class="avds_background" style="background-image:url(/images/avds_small.jpg)"></div>
                 <div class="avds_small_inner">
                     <div class="avds_discount_container">
-                        <img src="images/discount.png" alt="">
+                        <img src="/images/discount.png" alt="">
                         <div>
                             <div class="avds_discount">
                                 <div>20<span>%</span></div>
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div class="avds_large">
-                <div class="avds_background" style="background-image:url(images/avds_large.jpg)"></div>
+                <div class="avds_background" style="background-image:url(/images/avds_large.jpg)"></div>
                 <div class="avds_large_container">
                     <div class="avds_large_content">
                         <div class="avds_title">Professional Cameras</div>
@@ -146,7 +146,7 @@
                                 <div class="product_image"><img src="/images/{{$image}}" alt="{{$product->title}}"></div>
                                 <div class="product_extra product_new"><a href="{{route('showCategory',$product->category['alias'])}}">{{$product->category['title']}}</a></div>
                                 <div class="product_content">
-                                    <div class="product_title"><a href="{{route('showProduct',['category',$product->id])}}">{{$product->title}}</a></div>
+                                    <div class="product_title"><a href="{{route('showProduct',[$product->category['alias'],$product->alias])}}">{{$product->title}}</a></div>
                                     @if($product->new_price != null)
                                         <div style="text-decoration: line-through">${{$product->price}}</div>
                                         <div class="product_price">${{$product->new_price}}</div>
@@ -170,7 +170,7 @@
             <div class="row">
                 <div class="col">
                     <div class="avds_xl_container clearfix">
-                        <div class="avds_xl_background" style="background-image:url(images/avds_xl.jpg)"></div>
+                        <div class="avds_xl_background" style="background-image:url(/images/avds_xl.jpg)"></div>
                         <div class="avds_xl_content">
                             <div class="avds_title">Amazing Devices</div>
                             <div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus.</div>
@@ -191,7 +191,7 @@
                 <!-- Icon Box -->
                 <div class="col-lg-4 icon_box_col">
                     <div class="icon_box">
-                        <div class="icon_box_image"><img src="images/icon_1.svg" alt=""></div>
+                        <div class="icon_box_image"><img src="/images/icon_1.svg" alt=""></div>
                         <div class="icon_box_title">Free Shipping Worldwide</div>
                         <div class="icon_box_text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
@@ -202,7 +202,7 @@
                 <!-- Icon Box -->
                 <div class="col-lg-4 icon_box_col">
                     <div class="icon_box">
-                        <div class="icon_box_image"><img src="images/icon_2.svg" alt=""></div>
+                        <div class="icon_box_image"><img src="/images/icon_2.svg" alt=""></div>
                         <div class="icon_box_title">Free Returns</div>
                         <div class="icon_box_text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
@@ -213,7 +213,7 @@
                 <!-- Icon Box -->
                 <div class="col-lg-4 icon_box_col">
                     <div class="icon_box">
-                        <div class="icon_box_image"><img src="images/icon_3.svg" alt=""></div>
+                        <div class="icon_box_image"><img src="/images/icon_3.svg" alt=""></div>
                         <div class="icon_box_title">24h Fast Support</div>
                         <div class="icon_box_text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
